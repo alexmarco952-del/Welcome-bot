@@ -1,1 +1,6 @@
-python-telegram-bot
+import telebot
+bot = telebot.Telebot(8968083032:AAGkh4e84sRxWzzFdhWKKhC-cMDGImuFDsY)
+@bot.message_handler(commands=['start'])
+def start(message):
+bot.reply to(message, "Hello!")
+bot.infinity_polling()
